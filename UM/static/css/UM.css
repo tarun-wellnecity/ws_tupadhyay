@@ -1,0 +1,185 @@
+/* Standard browser css override */
+html {
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+  overflow-x: auto;
+  height: 100%
+}
+
+table {
+  empty-cells: show;
+}
+
+a:hover, a:active {
+  text-decoration: none;
+}
+
+body {
+  border: 0px;
+  margin: 0px auto;
+  font-family: Roboto, sans-serif;
+  color: #222222;
+  background-color: #ffffff;
+  height: 100%
+}
+
+.trillo-list-header {
+  background-color: #343A54;
+  color: #fff;
+  border-color: #343A54;
+}
+
+.trillo-list-row {
+  background-color: #fff;
+}
+
+.trillo-list-row.trillo-selected {
+  background-color: #5FC7D2;
+  color: #fff;
+}
+
+.trillo-content-c {
+  height: 50px;
+}
+
+.trillo-list-row.trillo-selected .trillo-content-c {
+  border-color: #fff;
+}
+
+.um-tool-bar {
+  position: fixed;
+  top: 70px;
+  padding: 1rem 1rem;
+  z-index: 2;
+}
+
+.main-content-area {
+  position: relative;
+  top: 70px;
+}
+
+.trillo-dt-container {
+  overflow-x: auto;
+  font-size: 0.875rem;
+}
+
+.trillo-table .dt-buttons {
+  display: block;
+  padding-top: 0;
+  margin-bottom: 1rem;
+}
+
+.dt-buttons .dt-button {
+  padding: .25rem .5rem;
+  font-size: 12px;
+  border-radius: 0.2rem;
+  background: #1e88e5;
+  color: #ffffff;
+  margin-right: 3px;
+  border: 1px solid #1e88e5;
+}
+
+.dt-buttons .dt-button:hover {
+  box-shadow: 0 14px 26px -12px rgba(116, 96, 238, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(116, 96, 238, 0.2);
+  background: #1e88e5;
+}
+
+.trillo-dt-top {
+  display: block;
+  padding: 0 1rem;
+}
+
+.trillo-dt-top .dataTables_length {
+  flex-grow: 1;
+}
+
+.trillo-dt-filter {
+  display: flex;
+  padding: 1rem;
+}
+
+.trillo-dt-top .dataTables_length label {
+  line-height: 38px;
+  margin-bottom: 0;
+}
+
+div.dataTables_wrapper {
+  padding-top: 1rem;
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+  margin-bottom: 0;
+  width: 400px;
+  max-width: 60%;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+  flex-grow: 1;
+  text-align: left;
+}
+
+div.dataTables_wrapper div.dataTables_filter label input {
+  margin-left: 0;
+  width: 100%;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+
+}
+
+div.dataTables_wrapper div.dataTables_paginate {
+  padding: 10px;
+}
+
+table.dataTable thead tr {
+
+}
+table.dataTable th {
+  font-weight: 666;
+  border-bottom:1px solid rgba(0,0,0,.16);
+}
+
+table.dataTable {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  border-bottom: 1px solid #dee2e6
+}
+
+.table.dataTable tbody tr:hover {
+  background-color: rgba(0,0,0,.04)!important;
+}
+
+tr.trillo-selected {
+  background-color: rgba(59,120,231,.08);
+}
+
+.page-item.active .page-link {
+  background-color: #1e88e5;
+  border-color: #1e88e5;
+}
+
+.main-logo {
+  padding-left: 10px;
+  padding-right: 15px;
+  border-right: 1px solid #ccc;
+}
+
+.main-app-name {
+  font-family: arial;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.main-menu {
+  justify-content: flex-end;
+}
+
+.main-menu.collapse.show,
+.main-menu.collapsing {
+  padding-top: 20px;
+}
+
+.login-menu {
+  right: 0;
+  left: auto;
+}

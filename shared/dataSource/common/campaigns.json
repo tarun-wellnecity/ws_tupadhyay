@@ -1,0 +1,109 @@
+{
+    "name" : "campaigns",
+    "attributes" : [
+      {
+        "name" : "id",
+        "type" : "biginteger",
+        "autoSequence" : true,
+        "persistent" : true,
+        "primaryKey" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "createdAt",
+        "type" : "biginteger",
+        "persistent" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "updatedAt",
+        "type" : "biginteger",
+        "persistent" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "deleted",
+        "type" : "boolean",
+        "persistent" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "deletedAt",
+        "type" : "biginteger",
+        "persistent" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "campaign_parent_id",
+        "type" : "biginteger",
+        "persistent" : true
+      },
+      {
+        "name" : "campaign_title",
+        "type" : "varchar",
+        "length" : 100,
+        "persistent" : true
+      },
+      {
+        "name" : "client_plan_id",
+        "type" : "biginteger",
+        "persistent" : true
+      },
+      {
+        "name" : "plan_library_id",
+        "type" : "biginteger",
+        "persistent" : true
+      },
+      {
+        "name" : "client_id",
+        "type" : "biginteger",
+        "persistent" : true
+      },
+      {
+        "name" : "campaign_description",
+        "type" : "varchar",
+        "length" : 255,
+        "persistent" : true
+      },
+      {
+        "name" : "campaign_is_active",
+        "type" : "boolean",
+        "persistent" : true
+      },
+      {
+        "name" : "campaign_start_date",
+        "type" : "timestamp",
+        "persistent" : true
+      },
+      {
+        "name" : "campaign_end_date",
+        "type" : "timestamp",
+        "persistent" : true
+      },
+      {
+        "name" : "campaign_close_date",
+        "type" : "timestamp",
+        "persistent" : true
+      },
+      {
+        "name" : "campaign_goal_location",
+        "type" : "boolean",
+        "persistent" : true
+      },
+      {
+        "name" : "campaign_enable_cases",
+        "type" : "boolean",
+        "persistent" : true
+      },
+      {
+        "name" : "campaign_created_by_user_id",
+        "type" : "integer",
+        "persistent" : true
+      }
+    ],
+    "displayName" : "campaigns",
+    "deleteAllBeforeSync" : false,
+    "nameInDS" : "campaigns_tbl",
+    "primaryKeyGenerator" : "serial",
+    "tableCreateable" : true
+  }

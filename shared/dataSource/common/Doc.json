@@ -1,0 +1,80 @@
+{
+  "name" : "Doc",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "biginteger",
+      "persistent" : true,
+      "primaryKey" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "name",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "createdAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deleted",
+      "type" : "boolean",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "displayName",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "creator",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "lastUpdater",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "version",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "visibility",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "storeType",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "storeId",
+      "type" : "string",
+      "persistent" : true
+    }
+  ],
+  "displayName" : "Doc",
+  "nameInDS" : "Doc_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true
+}

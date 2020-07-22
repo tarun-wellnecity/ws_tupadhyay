@@ -1,0 +1,79 @@
+{
+    "name" : "client",
+    "attributes" : [
+      {
+        "name" : "id",
+        "type" : "biginteger",
+        "persistent" : true,
+        "primaryKey" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "createdAt",
+        "type" : "biginteger",
+        "persistent" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "updatedAt",
+        "type" : "biginteger",
+        "persistent" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "deleted",
+        "type" : "boolean",
+        "persistent" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "deletedAt",
+        "type" : "biginteger",
+        "persistent" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "external_id",
+        "type" : "varchar",
+        "persistent" : true
+      },
+      {
+        "name" : "status",
+        "type" : "boolean",
+        "persistent" : true
+      },
+      {
+        "name" : "name",
+        "type" : "varchar",
+        "persistent" : true
+      },
+      {
+        "name" : "description",
+        "type" : "varchar",
+        "persistent" : true
+      },
+      {
+        "name" : "website",
+        "type" : "varchar",
+        "persistent" : true
+      }
+    ],
+    "associations" : [
+      {
+        "name" : "client_campaign",
+        "class2Name" : "campaigns1",
+        "type" : "ONE_TO_MANY",
+        "dir" : "CLS1_TO_CLS2",
+        "attrMapping" : {
+          "class2Attr" : "id"
+        },
+        "size" : 10,
+        "start" : 1
+      }
+    ],
+    "displayName" : "Client",
+    "deleteAllBeforeSync" : false,
+    "nameInDS" : "client_tbl",
+    "primaryKeyGenerator" : "serial",
+    "tableCreateable" : true
+  }

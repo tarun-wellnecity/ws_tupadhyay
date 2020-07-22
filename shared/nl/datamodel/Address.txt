@@ -1,0 +1,14 @@
+# This is a specification file.
+# A line having the first non-white character as "#" is considered to be comment.
+
+This file is specification of a table "Address".
+
+It has following attributes
+
+addressLine123
+addressLine2
+city
+state
+zip
+type
+boolean: verified

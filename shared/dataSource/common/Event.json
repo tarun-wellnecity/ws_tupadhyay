@@ -1,0 +1,74 @@
+{
+  "name" : "Event",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "biginteger",
+      "persistent" : true,
+      "primaryKey" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "name",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "createdAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deleted",
+      "type" : "boolean",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "timestamp",
+      "type" : "biginteger",
+      "persistent" : true
+    },
+    {
+      "name" : "type",
+      "type" : "string",
+      "length" : 16,
+      "persistent" : true
+    },
+    {
+      "name" : "parentUid",
+      "type" : "string",
+      "indexed" : true,
+      "length" : 32,
+      "persistent" : true
+    },
+    {
+      "name" : "accessControl",
+      "type" : "string",
+      "length" : 16,
+      "persistent" : true
+    },
+    {
+      "name" : "info",
+      "type" : "longstring",
+      "length" : 2048,
+      "persistent" : true
+    }
+  ],
+  "nameInDS" : "Event_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true
+}

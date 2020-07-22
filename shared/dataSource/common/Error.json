@@ -1,0 +1,86 @@
+{
+  "name" : "Error",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "biginteger",
+      "persistent" : true,
+      "primaryKey" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "name",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "createdAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deleted",
+      "type" : "boolean",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "timestamp",
+      "type" : "biginteger",
+      "persistent" : true
+    },
+    {
+      "name" : "errorKey",
+      "type" : "string",
+      "length" : 16,
+      "persistent" : true
+    },
+    {
+      "name" : "summary",
+      "type" : "string",
+      "indexed" : true,
+      "length" : 16,
+      "persistent" : true
+    },
+    {
+      "name" : "sourceId",
+      "type" : "biginteger",
+      "indexed" : true,
+      "persistent" : true
+    },
+    {
+      "name" : "accessControl",
+      "type" : "string",
+      "length" : 16,
+      "persistent" : true
+    },
+    {
+      "name" : "details",
+      "type" : "longstring",
+      "length" : 2048,
+      "persistent" : true
+    },
+    {
+      "name" : "tid",
+      "type" : "string",
+      "length" : 48,
+      "persistent" : true
+    }
+  ],
+  "nameInDS" : "Error_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true
+}

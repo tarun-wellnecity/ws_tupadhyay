@@ -1,0 +1,33 @@
+# Uncomment to use from CDN
+#https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css
+/$org_name$/_vendor/bootstrap/css/bootstrap.css
+
+/$org_name$/_vendor/css/icons/font-awesome/css/fontawesome-all.css
+/$org_name$/_vendor/css/icons/simple-line-icons/css/simple-line-icons.css
+/$org_name$/_vendor/css/icons/weather-icons/css/weather-icons.min.css
+/$org_name$/_vendor/css/icons/linea-icons/linea.css
+/$org_name$/_vendor/css/icons/themify-icons/themify-icons.css
+/$org_name$/_vendor/css/icons/flag-icon-css/flag-icon.min.css
+/$org_name$/_vendor/css/icons/material-design-iconic-font/css/materialdesignicons.min.css
+/$org_name$/_vendor/css/spinners.css
+/$org_name$/_vendor/css/animate.css
+
+/$org_name$/_vendor/datatables.net-bs4/css/dataTables.bootstrap4.css
+/$org_name$/_vendor/datatables.net-bs4/css/responsive.dataTables.min.css
+
+# These are custom theme files.
+/$org_name$/_vendor/css/style.css
+/$org_name$/_vendor/css/colors/blue.css
+
+https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.8.1/css/perfect-scrollbar.css
+https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css
+
+# You can comment or uncomment following lines as needed
+https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.1.2/flatpickr.css
+#https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.9/css/lightgallery.css
+
+# The following CSS are provided by Trillo and used by Trillo JS
+https://www.trillo.io/css/3.0/trillo.css
+https://www.trillo.io/css/3.0/trillo-theme.css
+https://www.trillo.io/css/role.css
+https://www.trillo.io/css/3.0/trillo-bootstrap4.css

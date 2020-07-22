@@ -1,0 +1,90 @@
+{
+  "name" : "Customer",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "biginteger",
+      "persistent" : true,
+      "primaryKey" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "createdAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deleted",
+      "type" : "boolean",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "name",
+      "type" : "string",
+      "naming" : true,
+      "persistent" : true
+    },
+    {
+      "name" : "description",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "primaryContact",
+      "type" : "long",
+      "persistent" : true
+    }
+  ],
+  "associations" : [
+    {
+      "name" : "customerToAddress",
+      "class2Name" : "Address",
+      "type" : "MANY_TO_MANY",
+      "dir" : "CLS1_TO_CLS2",
+      "size" : 10,
+      "start" : 1
+    },
+    {
+      "name" : "customerToNote",
+      "class2Name" : "Note",
+      "type" : "ONE_TO_MANY",
+      "dir" : "CLS1_TO_CLS2",
+      "size" : 10,
+      "start" : 1
+    },
+    {
+      "name" : "customerToJob",
+      "class2Name" : "Job",
+      "type" : "ONE_TO_MANY",
+      "dir" : "CLS1_TO_CLS2",
+      "size" : 10,
+      "start" : 1
+    },
+    {
+      "name" : "customerToContact",
+      "class2Name" : "Contact",
+      "type" : "ONE_TO_MANY",
+      "dir" : "CLS1_TO_CLS2",
+      "size" : 10,
+      "start" : 1
+    }
+  ],
+  "displayName" : "Customer",
+  "nameInDS" : "Customer_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true
+}

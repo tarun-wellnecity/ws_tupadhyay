@@ -1,0 +1,240 @@
+{
+  "name" : "Job",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true,
+      "primaryKey" : true
+    },
+    {
+      "name" : "name",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "displayName",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "description",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "creator",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "lastUpdater",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "primaryContact",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "coordinator",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "euipmentRep",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "jobNumber",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "model",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "status1",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "status2",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "status3",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "status4",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "openDate",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "dateDraft",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "dateAgreement",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "dateSigned",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "datePlanSent",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "dateGraphicsSent",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "dateApproved",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "deliveryWeek",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "manufactureDate",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "reqDateTime",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "scheduledDate",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "invoiceDate",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "shipDate",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "completionDate",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "cancelDate",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "metered",
+      "type" : "boolean",
+      "persistent" : true
+    },
+    {
+      "name" : "modemSize",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "createdAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deleted",
+      "type" : "boolean",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "customerId",
+      "type" : "long",
+      "persistent" : true
+    }
+  ],
+  "associations" : [
+    {
+      "name" : "jobToAddress",
+      "class2Name" : "Address",
+      "type" : "MANY_TO_MANY",
+      "dir" : "CLS1_TO_CLS2",
+      "size" : 10,
+      "start" : 1
+    },
+    {
+      "name" : "jobToNote",
+      "class2Name" : "Note",
+      "type" : "ONE_TO_MANY",
+      "dir" : "CLS1_TO_CLS2",
+      "size" : 10,
+      "start" : 1
+    },
+    {
+      "name" : "jobToOption",
+      "class2Name" : "Option",
+      "type" : "ONE_TO_MANY",
+      "dir" : "CLS1_TO_CLS2",
+      "attrMapping" : {
+        "class2Attr" : "jobId",
+        "myAttr" : "id"
+      },
+      "size" : 10,
+      "start" : 1
+    },
+    {
+      "name" : "files",
+      "class2Name" : "File",
+      "type" : "ONE_TO_MANY",
+      "dir" : "CLS1_TO_CLS2",
+      "orderBy" : "createdAt desc",
+      "size" : 10,
+      "start" : 1,
+      "where" : "parentUid='Job.{{{id}}}'"
+    }
+  ],
+  "displayName" : "Job",
+  "nameInDS" : "Job_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true
+}

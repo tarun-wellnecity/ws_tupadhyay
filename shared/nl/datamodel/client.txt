@@ -1,0 +1,31 @@
+This file is the specification of a class "client"
+Label, "Client"
+DB Table Name, "client_tbl"
+
+It has following attributes
+biginteger: id
+  Is this primary key?, true
+
+biginteger: createdAt
+
+biginteger: updatedAt
+
+boolean: deleted
+
+biginteger: deletedAt
+
+varchar: external_id
+
+boolean: status
+
+varchar: name
+
+varchar: description
+
+varchar: website
+
+It has the following associations
+client_campaign
+  Type, "ONE_TO_MANY"
+  Name of related class, "campaigns1"
+

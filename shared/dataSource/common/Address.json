@@ -1,0 +1,81 @@
+{
+  "name" : "Address",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "biginteger",
+      "persistent" : true,
+      "primaryKey" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "name",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "createdAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deleted",
+      "type" : "boolean",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "addressLine1",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "addressLine2",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "city",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "state",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "zip",
+      "type" : "string",
+      "persistent" : true,
+      "enumName" : "state-type"
+    },
+    {
+      "name" : "type",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "verified",
+      "type" : "boolean",
+      "persistent" : true
+    }
+  ],
+  "displayName" : "Address",
+  "nameInDS" : "Address_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true
+}

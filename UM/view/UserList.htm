@@ -1,0 +1,86 @@
+<script spec="view" type="application/json">
+  {
+    "name": "UserList",
+    "type": "dataTable",
+    "displayName": "List of User",
+    "container": "main-container",
+    "apiSpec": {
+      "impl": "Trillo.RestAdapter",
+      "serviceUrl": "ds/page/auth/vault",
+      "method": "post",
+      "body": {
+        "className": "User",
+        "start": 1,
+        "size": 2000,
+        "orderBy": "userId"
+      }
+    },
+    "observeChanges": true
+  }
+</script>
+
+<div class="trillo-table" nm="UserList">
+  <div data-component="title1" class="row page-titles mx-0">
+    <div class="col-6 align-self-center">
+      <h3 class="text-themecolor">Users</h3>
+    </div>
+    <div data-container="" class="col-6 align-self-center text-right js-toolbar">
+      <div class="js-toolbar-tools">
+        <button class="btn btn-link" type="button" nm="newUser">New User</button>
+        <button class="btn btn-link" type="button" data-for-class="User" nm="editUser">Edit</button>
+        <button class="btn btn-link" type="button" data-for-class="User" nm="resetPassword">Reset
+          Password</button>
+        <button class="btn btn-link trillo-display-none" type="button" data-for-class="User-REMOVE-ME" nm="deactivate">
+          <span>Activate</span>
+          <span>Deactivate</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="mx-4">
+    <div data-wrapper="table" class="table-responsive">
+      <div class="card">
+        <div data-container="" class="card-body">
+          <table data-container="" class="table">
+            <thead>
+              <tr data-table-header="">
+                <th style="width:17%">User Id</th>
+                <th style="width:16%">Email</th>
+                <th style="width:16%">First Name</th>
+                <th style="width:16%">Last Name</th>
+                <th style="width:10%">Role</th>
+                <th style="width:15%">Last Access</th>
+                <th style="width:10%"># Logins</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-table-row="">
+                <td data-component="readonly">
+                  <span data-field="" nm="userId" readonly="readonly"></span>
+                </td>
+                <td data-component="readonly">
+                  <span data-field="" nm="email" readonly="readonly"></span>
+                </td>
+                <td data-component="readonly">
+                  <span data-field="" nm="firstName" readonly="readonly"></span>
+                </td>
+                <td data-component="readonly">
+                  <span data-field="" nm="lastName" readonly="readonly"></span>
+                </td>
+                <td data-component="readonly">
+                  <span data-field="" nm="role" readonly="readonly"></span>
+                </td>
+                <td data-component="readonly">
+                  <span data-field="datetime" format="M/D/YY - h:mm A" nm="lastAccessTS" readonly="readonly"></span>
+                </td>
+                <td data-component="readonly">
+                  <span data-field="" nm="accessCount" readonly="readonly"></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,4 @@
+https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700
+shared/static/css/jquery-form-validator.css
+shared/static/css/templates.css
+UM/static/css/UM.css

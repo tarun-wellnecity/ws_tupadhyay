@@ -1,0 +1,914 @@
+[
+  {
+    "serviceUrl" : "/ds/delete/shared/common/Job",
+    "method" : "delete",
+    "querySchema" : {
+      "properties" : {
+        "permanent" : {
+          "type" : "string"
+        },
+        "id" : {
+          "required" : true,
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/deleteAll/shared/common/Job",
+    "bodySchema" : {
+      "array" : true,
+      "type" : "string"
+    },
+    "method" : "post",
+    "querySchema" : {
+      "properties" : {
+        "permanent" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/deleteByQuery/shared/common/Job",
+    "method" : "delete",
+    "querySchema" : {
+      "properties" : {
+        "permanent" : {
+          "type" : "string"
+        },
+        "query" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/object/shared/common/Job",
+    "method" : "get",
+    "querySchema" : {
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/objectwithassociation/shared/common/Job",
+    "method" : "get",
+    "querySchema" : {
+      "properties" : {
+        "assocName" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/objects/shared/common/Job",
+    "bodySchema" : {
+      "array" : true,
+      "type" : "string"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/objectsbyquery/shared/common/Job",
+    "method" : "get",
+    "querySchema" : {
+      "properties" : {
+        "query" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/objectsbyquerywithassociation/shared/common/Job",
+    "method" : "get",
+    "querySchema" : {
+      "properties" : {
+        "assocName" : {
+          "type" : "string"
+        },
+        "query" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/page/shared/common",
+    "bodySchema" : {
+      "properties" : {
+        "having" : {
+          "type" : "string"
+        },
+        "size" : {
+          "type" : "integer"
+        },
+        "start" : {
+          "type" : "integer"
+        },
+        "orderBy" : {
+          "type" : "string"
+        },
+        "className" : {
+          "type" : "string"
+        },
+        "where" : {
+          "type" : "string"
+        },
+        "groupBy" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/save/shared/common/Job",
+    "bodySchema" : {
+      "properties" : {
+        "cancelDate" : {
+          "type" : "long"
+        },
+        "displayName" : {
+          "type" : "string"
+        },
+        "lastUpdater" : {
+          "type" : "long"
+        },
+        "dateAgreement" : {
+          "type" : "long"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "scheduledDate" : {
+          "type" : "long"
+        },
+        "dateGraphicsSent" : {
+          "type" : "long"
+        },
+        "status1" : {
+          "type" : "string"
+        },
+        "dateApproved" : {
+          "type" : "long"
+        },
+        "customerId" : {
+          "type" : "long"
+        },
+        "manufactureDate" : {
+          "type" : "long"
+        },
+        "model" : {
+          "type" : "string"
+        },
+        "metered" : {
+          "type" : "boolean"
+        },
+        "creator" : {
+          "type" : "long"
+        },
+        "datePlanSent" : {
+          "type" : "long"
+        },
+        "reqDateTime" : {
+          "type" : "long"
+        },
+        "coordinator" : {
+          "type" : "long"
+        },
+        "status2" : {
+          "type" : "string"
+        },
+        "invoiceDate" : {
+          "type" : "long"
+        },
+        "shipDate" : {
+          "type" : "long"
+        },
+        "euipmentRep" : {
+          "type" : "long"
+        },
+        "status3" : {
+          "type" : "string"
+        },
+        "status4" : {
+          "type" : "string"
+        },
+        "deliveryWeek" : {
+          "type" : "long"
+        },
+        "primaryContact" : {
+          "type" : "long"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "completionDate" : {
+          "type" : "long"
+        },
+        "openDate" : {
+          "type" : "long"
+        },
+        "dateSigned" : {
+          "type" : "long"
+        },
+        "jobNumber" : {
+          "type" : "string"
+        },
+        "dateDraft" : {
+          "type" : "long"
+        },
+        "modemSize" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post",
+    "outputSchema" : {
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/saveAll/shared/common/Job",
+    "bodySchema" : {
+      "array" : true,
+      "properties" : {
+        "cancelDate" : {
+          "type" : "long"
+        },
+        "displayName" : {
+          "type" : "string"
+        },
+        "lastUpdater" : {
+          "type" : "long"
+        },
+        "dateAgreement" : {
+          "type" : "long"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "scheduledDate" : {
+          "type" : "long"
+        },
+        "dateGraphicsSent" : {
+          "type" : "long"
+        },
+        "status1" : {
+          "type" : "string"
+        },
+        "dateApproved" : {
+          "type" : "long"
+        },
+        "customerId" : {
+          "type" : "long"
+        },
+        "manufactureDate" : {
+          "type" : "long"
+        },
+        "model" : {
+          "type" : "string"
+        },
+        "metered" : {
+          "type" : "boolean"
+        },
+        "creator" : {
+          "type" : "long"
+        },
+        "datePlanSent" : {
+          "type" : "long"
+        },
+        "reqDateTime" : {
+          "type" : "long"
+        },
+        "coordinator" : {
+          "type" : "long"
+        },
+        "status2" : {
+          "type" : "string"
+        },
+        "invoiceDate" : {
+          "type" : "long"
+        },
+        "shipDate" : {
+          "type" : "long"
+        },
+        "euipmentRep" : {
+          "type" : "long"
+        },
+        "status3" : {
+          "type" : "string"
+        },
+        "status4" : {
+          "type" : "string"
+        },
+        "deliveryWeek" : {
+          "type" : "long"
+        },
+        "primaryContact" : {
+          "type" : "long"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "completionDate" : {
+          "type" : "long"
+        },
+        "openDate" : {
+          "type" : "long"
+        },
+        "dateSigned" : {
+          "type" : "long"
+        },
+        "jobNumber" : {
+          "type" : "string"
+        },
+        "dateDraft" : {
+          "type" : "long"
+        },
+        "modemSize" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/update/shared/common/Job",
+    "bodySchema" : {
+      "properties" : {
+        "ids" : {
+          "array" : true,
+          "type" : "string"
+        },
+        "attrValue" : {
+          "type" : "object"
+        },
+        "attrName" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/updateOne/shared/common/Job",
+    "bodySchema" : {
+      "properties" : {
+        "attrValue" : {
+          "type" : "object"
+        },
+        "id" : {
+          "type" : "string"
+        },
+        "attrName" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/saveObjectWithAssociation/shared/common/Job",
+    "bodySchema" : {
+      "properties" : {
+        "cancelDate" : {
+          "type" : "long"
+        },
+        "displayName" : {
+          "type" : "string"
+        },
+        "lastUpdater" : {
+          "type" : "long"
+        },
+        "dateAgreement" : {
+          "type" : "long"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "scheduledDate" : {
+          "type" : "long"
+        },
+        "dateGraphicsSent" : {
+          "type" : "long"
+        },
+        "status1" : {
+          "type" : "string"
+        },
+        "dateApproved" : {
+          "type" : "long"
+        },
+        "customerId" : {
+          "type" : "long"
+        },
+        "manufactureDate" : {
+          "type" : "long"
+        },
+        "model" : {
+          "type" : "string"
+        },
+        "metered" : {
+          "type" : "boolean"
+        },
+        "creator" : {
+          "type" : "long"
+        },
+        "datePlanSent" : {
+          "type" : "long"
+        },
+        "reqDateTime" : {
+          "type" : "long"
+        },
+        "coordinator" : {
+          "type" : "long"
+        },
+        "status2" : {
+          "type" : "string"
+        },
+        "invoiceDate" : {
+          "type" : "long"
+        },
+        "shipDate" : {
+          "type" : "long"
+        },
+        "euipmentRep" : {
+          "type" : "long"
+        },
+        "status3" : {
+          "type" : "string"
+        },
+        "status4" : {
+          "type" : "string"
+        },
+        "deliveryWeek" : {
+          "type" : "long"
+        },
+        "primaryContact" : {
+          "type" : "long"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "completionDate" : {
+          "type" : "long"
+        },
+        "openDate" : {
+          "type" : "long"
+        },
+        "dateSigned" : {
+          "type" : "long"
+        },
+        "jobNumber" : {
+          "type" : "string"
+        },
+        "dateDraft" : {
+          "type" : "long"
+        },
+        "modemSize" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post",
+    "querySchema" : {
+      "properties" : {
+        "deleteOld" : {
+          "type" : "string"
+        },
+        "assocName" : {
+          "required" : true,
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/saveObjectsWithAssociation/shared/common/Job",
+    "bodySchema" : {
+      "properties" : {
+        "cancelDate" : {
+          "type" : "long"
+        },
+        "displayName" : {
+          "type" : "string"
+        },
+        "lastUpdater" : {
+          "type" : "long"
+        },
+        "dateAgreement" : {
+          "type" : "long"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "scheduledDate" : {
+          "type" : "long"
+        },
+        "dateGraphicsSent" : {
+          "type" : "long"
+        },
+        "status1" : {
+          "type" : "string"
+        },
+        "dateApproved" : {
+          "type" : "long"
+        },
+        "customerId" : {
+          "type" : "long"
+        },
+        "manufactureDate" : {
+          "type" : "long"
+        },
+        "model" : {
+          "type" : "string"
+        },
+        "metered" : {
+          "type" : "boolean"
+        },
+        "creator" : {
+          "type" : "long"
+        },
+        "datePlanSent" : {
+          "type" : "long"
+        },
+        "reqDateTime" : {
+          "type" : "long"
+        },
+        "coordinator" : {
+          "type" : "long"
+        },
+        "status2" : {
+          "type" : "string"
+        },
+        "invoiceDate" : {
+          "type" : "long"
+        },
+        "shipDate" : {
+          "type" : "long"
+        },
+        "euipmentRep" : {
+          "type" : "long"
+        },
+        "status3" : {
+          "type" : "string"
+        },
+        "status4" : {
+          "type" : "string"
+        },
+        "deliveryWeek" : {
+          "type" : "long"
+        },
+        "primaryContact" : {
+          "type" : "long"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "completionDate" : {
+          "type" : "long"
+        },
+        "openDate" : {
+          "type" : "long"
+        },
+        "dateSigned" : {
+          "type" : "long"
+        },
+        "jobNumber" : {
+          "type" : "string"
+        },
+        "dateDraft" : {
+          "type" : "long"
+        },
+        "modemSize" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post",
+    "querySchema" : {
+      "properties" : {
+        "deleteOld" : {
+          "type" : "string"
+        },
+        "assocName" : {
+          "required" : true,
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/saveSnapshot/shared/common/Job",
+    "bodySchema" : {
+      "properties" : {
+        "sourceId" : {
+          "type" : "string"
+        },
+        "snapKey" : {
+          "type" : "string"
+        },
+        "sourceObject" : {
+          "type" : "object"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/snapshot/shared/common/Job",
+    "method" : "get",
+    "querySchema" : {
+      "properties" : {
+        "sourceId" : {
+          "type" : "string"
+        },
+        "snapKey" : {
+          "required" : true,
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/sqltemplate/shared/common",
+    "bodySchema" : {
+      "properties" : {
+        "sqlTemplate" : {
+          "type" : "string"
+        },
+        "size" : {
+          "type" : "integer"
+        },
+        "start" : {
+          "type" : "integer"
+        },
+        "className" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/objectgraph/shared/common",
+    "bodySchema" : {
+      "properties" : {
+        "children" : {
+          "type" : "object"
+        },
+        "query" : {
+          "type" : "string"
+        },
+        "className" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post",
+    "outputSchema" : {
+      "properties" : {
+        "jobToAddress" : {
+          "array" : true,
+          "properties" : {
+            "zip" : {
+              "type" : "string"
+            },
+            "createdAt" : {
+              "type" : "number"
+            },
+            "city" : {
+              "type" : "string"
+            },
+            "addressLine1" : {
+              "type" : "string"
+            },
+            "id" : {
+              "type" : "number"
+            },
+            "state" : {
+              "type" : "string"
+            },
+            "type" : {
+              "type" : "string"
+            },
+            "updatedAt" : {
+              "type" : "number"
+            }
+          },
+          "type" : "object"
+        },
+        "cancelDate" : {
+          "type" : "number"
+        },
+        "displayName" : {
+          "type" : "string"
+        },
+        "dateAgreement" : {
+          "type" : "number"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "scheduledDate" : {
+          "type" : "number"
+        },
+        "jobToOption" : {
+          "array" : true,
+          "properties" : {
+            "cost" : {
+              "type" : "number"
+            },
+            "productId" : {
+              "type" : "string"
+            },
+            "productName" : {
+              "type" : "string"
+            },
+            "manufacturer" : {
+              "type" : "string"
+            },
+            "createdAt" : {
+              "type" : "number"
+            },
+            "jobId" : {
+              "type" : "number"
+            },
+            "price" : {
+              "type" : "number"
+            },
+            "qty" : {
+              "type" : "number"
+            },
+            "name" : {
+              "type" : "string"
+            },
+            "id" : {
+              "type" : "number"
+            },
+            "updatedAt" : {
+              "type" : "number"
+            },
+            "actualCost" : {
+              "type" : "number"
+            }
+          },
+          "type" : "object"
+        },
+        "createdAt" : {
+          "type" : "number"
+        },
+        "dateGraphicsSent" : {
+          "type" : "number"
+        },
+        "status1" : {
+          "type" : "string"
+        },
+        "dateApproved" : {
+          "type" : "number"
+        },
+        "customerId" : {
+          "type" : "number"
+        },
+        "manufactureDate" : {
+          "type" : "number"
+        },
+        "id" : {
+          "type" : "number"
+        },
+        "updatedAt" : {
+          "type" : "number"
+        },
+        "datePlanSent" : {
+          "type" : "number"
+        },
+        "reqDateTime" : {
+          "type" : "number"
+        },
+        "invoiceDate" : {
+          "type" : "number"
+        },
+        "shipDate" : {
+          "type" : "number"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "files" : {
+          "array" : true,
+          "properties" : {
+            "tnUrl" : {
+              "type" : "string"
+            },
+            "parentUid" : {
+              "type" : "string"
+            },
+            "idOfUser" : {
+              "type" : "number"
+            },
+            "title" : {
+              "type" : "string"
+            },
+            "userId" : {
+              "type" : "string"
+            },
+            "url" : {
+              "type" : "string"
+            },
+            "createdAt" : {
+              "type" : "number"
+            },
+            "contentUrl" : {
+              "type" : "string"
+            },
+            "deletedAt" : {
+              "type" : "number"
+            },
+            "deleted" : {
+              "type" : "number"
+            },
+            "size" : {
+              "type" : "number"
+            },
+            "name" : {
+              "type" : "string"
+            },
+            "viewUrl" : {
+              "type" : "string"
+            },
+            "id" : {
+              "type" : "number"
+            },
+            "updatedAt" : {
+              "type" : "number"
+            }
+          },
+          "type" : "object"
+        },
+        "completionDate" : {
+          "type" : "number"
+        },
+        "openDate" : {
+          "type" : "number"
+        },
+        "dateSigned" : {
+          "type" : "number"
+        },
+        "jobNumber" : {
+          "type" : "string"
+        },
+        "dateDraft" : {
+          "type" : "number"
+        }
+      },
+      "type" : "object"
+    },
+    "testBody" : {
+      "children" : [
+        {
+          "assocName" : "jobToOption"
+        },
+        {
+          "assocName" : "files"
+        },
+        {
+          "assocName" : "jobToAddress"
+        }
+      ],
+      "className" : "Job",
+      "id" : 1
+    }
+  }
+]

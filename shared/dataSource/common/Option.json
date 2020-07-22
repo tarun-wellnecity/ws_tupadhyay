@@ -1,0 +1,90 @@
+{
+  "name" : "Option",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "biginteger",
+      "persistent" : true,
+      "primaryKey" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "name",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "createdAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deleted",
+      "type" : "boolean",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "jobId",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "productId",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "productName",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "manufacturer",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "price",
+      "type" : "float",
+      "persistent" : true
+    },
+    {
+      "name" : "cost",
+      "type" : "float",
+      "persistent" : true
+    },
+    {
+      "name" : "actualCost",
+      "type" : "float",
+      "persistent" : true
+    },
+    {
+      "name" : "qty",
+      "type" : "integer",
+      "persistent" : true
+    },
+    {
+      "name" : "type",
+      "type" : "string",
+      "persistent" : true
+    }
+  ],
+  "displayName" : "Option",
+  "nameInDS" : "Option_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true
+}

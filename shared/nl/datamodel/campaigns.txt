@@ -1,0 +1,45 @@
+This file is the specification of a class "campaigns"
+Label, "campaigns"
+DB Table Name, "campaigns_tbl"
+
+It has following attributes
+biginteger: id
+  Is this primary key?, true
+  Auto generate the value in sequence, true
+
+biginteger: createdAt
+
+biginteger: updatedAt
+
+boolean: deleted
+
+biginteger: deletedAt
+
+biginteger: campaign_parent_id
+
+varchar: campaign_title
+  Length in database, 100
+
+biginteger: client_plan_id
+
+biginteger: plan_library_id
+
+biginteger: client_id
+
+varchar: campaign_description
+  Length in database, 255
+
+boolean: campaign_is_active
+
+timestamp: campaign_start_date
+
+timestamp: campaign_end_date
+
+timestamp: campaign_close_date
+
+boolean: campaign_goal_location
+
+boolean: campaign_enable_cases
+
+integer: campaign_created_by_user_id
+

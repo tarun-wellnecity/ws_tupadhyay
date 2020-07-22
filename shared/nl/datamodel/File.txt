@@ -1,0 +1,65 @@
+This file is specification of a class "File"
+
+User friendly name, File
+Database table, File_tbl
+It has following attributes
+biginteger: id,
+  It is the primary key
+
+string: fileKey,
+
+string: provider,
+  Length in database, 32
+
+biginteger: createdAt,
+
+string: name,
+
+string: url,
+
+string: contentUrl,
+
+string: viewUrl,
+
+string: tnUrl,
+
+string: title,
+
+biginteger: updatedAt,
+
+boolean: deleted,
+
+biginteger: deletedAt,
+
+string: description,
+
+string: parentUid,
+  It is indexed
+  Length in database, 32
+
+string: parentUid2,
+  It is indexed
+  Length in database, 32
+
+biginteger: idOfUser,
+  It is indexed
+
+string: userId,
+  Length in database, 16
+
+string: firstName,
+  Length in database, 50
+
+string: lastName,
+  Length in database, 50
+
+string: tags,
+  Name in Database, "tags"
+  Type in Database, "VARCHAR"
+
+integer: visibility,
+
+integer: size,
+
+long: jobId,
+

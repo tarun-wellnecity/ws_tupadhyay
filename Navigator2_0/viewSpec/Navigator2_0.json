@@ -1,0 +1,7 @@
+{
+  "name" : "Navigator2_0",
+  "type" : "page",
+  "displayName" : "Navigator2_0 Template",
+  "controller" : "AppC",
+  "cssClass" : "trillo-container"
+}

@@ -1,0 +1,14 @@
+# This is a specification file.
+# A line having the first non-white character as "#" is considered to be comment.
+
+This file is specification of a table "Option".
+It has following attributes
+
+productId
+productName
+manufacturer
+float: price
+float: cost
+float: actualCost
+int: qty
+type

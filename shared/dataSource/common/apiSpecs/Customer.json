@@ -1,0 +1,416 @@
+[
+  {
+    "serviceUrl" : "/ds/delete/shared/common/Customer",
+    "method" : "delete",
+    "querySchema" : {
+      "properties" : {
+        "permanent" : {
+          "type" : "string"
+        },
+        "id" : {
+          "required" : true,
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/deleteAll/shared/common/Customer",
+    "bodySchema" : {
+      "array" : true,
+      "type" : "string"
+    },
+    "method" : "post",
+    "querySchema" : {
+      "properties" : {
+        "permanent" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/deleteByQuery/shared/common/Customer",
+    "method" : "delete",
+    "querySchema" : {
+      "properties" : {
+        "permanent" : {
+          "type" : "string"
+        },
+        "query" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/object/shared/common/Customer",
+    "method" : "get",
+    "querySchema" : {
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/objectwithassociation/shared/common/Customer",
+    "method" : "get",
+    "querySchema" : {
+      "properties" : {
+        "assocName" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/objects/shared/common/Customer",
+    "bodySchema" : {
+      "array" : true,
+      "type" : "string"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/objectsbyquery/shared/common/Customer",
+    "method" : "get",
+    "querySchema" : {
+      "properties" : {
+        "query" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/objectsbyquerywithassociation/shared/common/Customer",
+    "method" : "get",
+    "querySchema" : {
+      "properties" : {
+        "assocName" : {
+          "type" : "string"
+        },
+        "query" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/page/shared/common/Customer",
+    "bodySchema" : {
+      "properties" : {
+        "having" : {
+          "type" : "string"
+        },
+        "size" : {
+          "type" : "integer"
+        },
+        "start" : {
+          "type" : "integer"
+        },
+        "orderBy" : {
+          "type" : "string"
+        },
+        "className" : {
+          "type" : "string"
+        },
+        "where" : {
+          "type" : "string"
+        },
+        "groupBy" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/save/shared/common/Customer",
+    "bodySchema" : {
+      "properties" : {
+        "primaryContact" : {
+          "type" : "long"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/saveAll/shared/common/Customer",
+    "bodySchema" : {
+      "array" : true,
+      "properties" : {
+        "primaryContact" : {
+          "type" : "long"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/update/shared/common/Customer",
+    "bodySchema" : {
+      "properties" : {
+        "ids" : {
+          "array" : true,
+          "type" : "string"
+        },
+        "attrValue" : {
+          "type" : "object"
+        },
+        "attrName" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/updateOne/shared/common/Customer",
+    "bodySchema" : {
+      "properties" : {
+        "attrValue" : {
+          "type" : "object"
+        },
+        "id" : {
+          "type" : "string"
+        },
+        "attrName" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/saveObjectWithAssociation/shared/common/Customer",
+    "bodySchema" : {
+      "properties" : {
+        "primaryContact" : {
+          "type" : "long"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post",
+    "querySchema" : {
+      "properties" : {
+        "deleteOld" : {
+          "type" : "string"
+        },
+        "assocName" : {
+          "required" : true,
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/saveObjectsWithAssociation/shared/common/Customer",
+    "bodySchema" : {
+      "properties" : {
+        "primaryContact" : {
+          "type" : "long"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post",
+    "querySchema" : {
+      "properties" : {
+        "deleteOld" : {
+          "type" : "string"
+        },
+        "assocName" : {
+          "required" : true,
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/saveSnapshot/shared/common/Customer",
+    "bodySchema" : {
+      "properties" : {
+        "sourceId" : {
+          "type" : "string"
+        },
+        "snapKey" : {
+          "type" : "string"
+        },
+        "sourceObject" : {
+          "type" : "object"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/snapshot/shared/common/Customer",
+    "method" : "get",
+    "querySchema" : {
+      "properties" : {
+        "sourceId" : {
+          "type" : "string"
+        },
+        "snapKey" : {
+          "required" : true,
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/sqltemplate/shared/common/Customer",
+    "bodySchema" : {
+      "properties" : {
+        "sqlTemplate" : {
+          "type" : "string"
+        },
+        "size" : {
+          "type" : "integer"
+        },
+        "start" : {
+          "type" : "integer"
+        },
+        "className" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/objectgraph/shared/common/Customer",
+    "bodySchema" : {
+      "properties" : {
+        "children" : {
+          "type" : "object"
+        },
+        "query" : {
+          "type" : "string"
+        },
+        "className" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post",
+    "outputSchema" : {
+      "properties" : {
+        "createdAt" : {
+          "type" : "number"
+        },
+        "primaryContact" : {
+          "type" : "number"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "number"
+        },
+        "_label" : {
+          "type" : "string"
+        },
+        "updatedAt" : {
+          "type" : "number"
+        },
+        "customerToAddress" : {
+          "array" : true,
+          "properties" : {
+            "zip" : {
+              "type" : "string"
+            },
+            "createdAt" : {
+              "type" : "number"
+            },
+            "city" : {
+              "type" : "string"
+            },
+            "addressLine1" : {
+              "type" : "string"
+            },
+            "id" : {
+              "type" : "number"
+            },
+            "state" : {
+              "type" : "string"
+            },
+            "type" : {
+              "type" : "string"
+            },
+            "updatedAt" : {
+              "type" : "number"
+            }
+          },
+          "type" : "object"
+        }
+      },
+      "type" : "object"
+    },
+    "testBody" : {
+      "children" : [
+        {
+          "assocName" : "customerToAddress"
+        }
+      ],
+      "className" : "Customer",
+      "id" : 1
+    }
+  }
+]

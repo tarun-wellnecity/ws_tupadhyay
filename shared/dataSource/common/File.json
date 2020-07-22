@@ -1,0 +1,136 @@
+{
+  "name" : "File",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "biginteger",
+      "persistent" : true,
+      "primaryKey" : true
+    },
+    {
+      "name" : "fileKey",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "provider",
+      "type" : "string",
+      "persistent" : true,
+      "length" : 32
+    },
+    {
+      "name" : "createdAt",
+      "type" : "biginteger",
+      "persistent" : true
+    },
+    {
+      "name" : "fileName",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "url",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "contentUrl",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "viewUrl",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "tnUrl",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "title",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "biginteger",
+      "persistent" : true
+    },
+    {
+      "name" : "deleted",
+      "type" : "boolean",
+      "persistent" : true
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "biginteger",
+      "persistent" : true
+    },
+    {
+      "name" : "description",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "parentUid",
+      "type" : "string",
+      "length" : 32,
+      "indexed" : true,
+      "persistent" : true
+    },
+    {
+      "name" : "parentUid2",
+      "type" : "string",
+      "indexed" : true,
+      "length" : 32,
+      "persistent" : true
+    },
+    {
+      "name" : "idOfUser",
+      "type" : "biginteger",
+      "indexed" : true,
+      "persistent" : true
+    },
+    {
+      "name" : "userId",
+      "type" : "string",
+      "length" : 16,
+      "persistent" : true
+    },
+    {
+      "name" : "firstName",
+      "type" : "string",
+      "length" : 50,
+      "persistent" : true
+    },
+    {
+      "name" : "lastName",
+      "type" : "string",
+      "length" : 50,
+      "persistent" : true
+    },
+    {
+      "name" : "tags",
+      "type" : "string",
+      "nameInDS" : "tags",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "visibility",
+      "type" : "integer",
+      "persistent" : true
+    },
+    {
+      "name" : "size",
+      "type" : "integer",
+      "persistent" : true
+    }
+  ],
+  "displayName" : "File",
+  "nameInDS" : "File_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true
+}

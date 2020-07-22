@@ -1,0 +1,12 @@
+# This is a specification file.
+# A line having the first non-white character as "#" is considered to be comment.
+
+This file is specification of a table "Product".
+It has following attributes
+
+productId
+productName
+manufacturer
+price
+dateOfPrice
+

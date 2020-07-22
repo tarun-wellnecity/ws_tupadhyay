@@ -1,0 +1,34 @@
+This file is the specification of a class "Contact"
+Label, "Contact"
+DB Table Name, "Contact_tbl"
+
+It has following attributes
+biginteger: id
+  Is this primary key?, true
+
+string: name
+  naming, true
+
+biginteger: createdAt
+
+biginteger: updatedAt
+
+boolean: deleted
+
+biginteger: deletedAt
+
+long: customerId
+  Name of related class, "Customer"
+
+string: firstName
+
+string: lastName
+
+string: primaryPhone
+
+string: altPhone
+
+string: email
+
+long: idOfUser
+

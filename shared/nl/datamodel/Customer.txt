@@ -1,0 +1,40 @@
+This file is the specification of a class "Customer"
+Label, "Customer"
+DB Table Name, "Customer_tbl"
+
+It has following attributes
+biginteger: id
+  Is this primary key?, true
+
+biginteger: createdAt
+
+biginteger: updatedAt
+
+boolean: deleted
+
+biginteger: deletedAt
+
+string: name
+  naming, true
+
+string: description
+
+long: primaryContact
+
+It has the following associations
+customerToAddress
+  Type, "MANY_TO_MANY"
+  Name of related class, "Address"
+
+customerToNote
+  Type, "ONE_TO_MANY"
+  Name of related class, "Note"
+
+customerToJob
+  Type, "ONE_TO_MANY"
+  Name of related class, "Job"
+
+customerToContact
+  Type, "ONE_TO_MANY"
+  Name of related class, "Contact"
+

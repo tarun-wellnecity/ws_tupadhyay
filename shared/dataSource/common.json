@@ -1,0 +1,6 @@
+{
+  "name" : "common",
+  "useDefault" : true,
+  "type" : "mysql",
+  "properties" : { }
+}

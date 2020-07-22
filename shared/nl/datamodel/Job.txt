@@ -1,0 +1,98 @@
+This file is specification of a class "Job"
+User friendly name, Job
+Database table, Job_tbl
+
+It has following attributes
+biginteger: id,
+
+string: name,
+
+string: displayName,
+
+string: description,
+
+long: creator,
+
+long: lastUpdater,
+
+long: primaryContact,
+
+long: coordinator,
+
+long: euipmentRep,
+
+string: jobNumber,
+
+string: model,
+
+string: status1,
+
+string: status2,
+
+string: status3,
+
+string: status4,
+
+long: openDate,
+
+long: dateDraft,
+
+long: dateAgreement,
+
+long: dateSigned,
+
+long: datePlanSent,
+
+long: dateGraphicsSent,
+
+long: dateApproved,
+
+long: deliveryWeek,
+
+long: manufactureDate,
+
+long: reqDateTime,
+
+long: scheduledDate,
+
+long: invoiceDate,
+
+long: shipDate,
+
+long: completionDate,
+
+long: cancelDate,
+
+boolean: metered,
+
+string: modemSize,
+
+biginteger: createdAt,
+
+biginteger: updatedAt,
+
+boolean: deleted,
+
+biginteger: deletedAt,
+
+long: customerId,
+
+
+It has following associations
+jobToAddress
+  Type, "MANY_TO_MANY"
+  Many to many with, Address
+
+jobToNote
+  Type, "ONE_TO_MANY"
+  Contains many, Note
+
+jobToOption
+  Type, "ONE_TO_MANY"
+  Contains many, Option
+
+files
+  Type, "ONE_TO_MANY"
+  Contains many, File
+  Where clause, "parentUid='Job.{{{id}}}'"
+  Order by, "createdAt desc"

@@ -1,0 +1,116 @@
+{
+  "name" : "Task",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "biginteger",
+      "persistent" : true,
+      "primaryKey" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "name",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "createdAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deleted",
+      "type" : "boolean",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "taskId",
+      "type" : "string",
+      "length" : 16,
+      "persistent" : true
+    },
+    {
+      "name" : "type",
+      "type" : "string",
+      "length" : 16,
+      "persistent" : true
+    },
+    {
+      "name" : "dueDate",
+      "type" : "biginteger",
+      "persistent" : true
+    },
+    {
+      "name" : "status",
+      "type" : "string",
+      "length" : 16,
+      "persistent" : true
+    },
+    {
+      "name" : "priority",
+      "type" : "integer",
+      "defaultValue" : 2,
+      "persistent" : true
+    },
+    {
+      "name" : "idOfUser",
+      "type" : "biginteger",
+      "indexed" : true,
+      "persistent" : true
+    },
+    {
+      "name" : "userId",
+      "type" : "string",
+      "length" : 16,
+      "persistent" : true
+    },
+    {
+      "name" : "firstName",
+      "type" : "string",
+      "length" : 50,
+      "persistent" : true
+    },
+    {
+      "name" : "lastName",
+      "type" : "string",
+      "length" : 50,
+      "persistent" : true
+    },
+    {
+      "name" : "parentUid",
+      "type" : "string",
+      "indexed" : true,
+      "length" : 32,
+      "persistent" : true
+    },
+    {
+      "name" : "accessControl",
+      "type" : "string",
+      "length" : 16,
+      "persistent" : true
+    },
+    {
+      "name" : "description",
+      "type" : "longstring",
+      "length" : 1024,
+      "persistent" : true
+    }
+  ],
+  "nameInDS" : "Task_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true
+}

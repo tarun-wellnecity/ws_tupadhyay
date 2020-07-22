@@ -1,0 +1,15 @@
+# This is a specification file.
+# A line having the first non-white character as "#" is considered to be comment.
+
+This file is specification of a table "Doc".
+It has following attributes
+
+name
+displayName
+long: creator
+long: lastUpdater
+version
+visibility
+storeType
+storeId
+  

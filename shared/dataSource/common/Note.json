@@ -1,0 +1,62 @@
+{
+  "name" : "Note",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "biginteger",
+      "persistent" : true,
+      "primaryKey" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "name",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "createdAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deleted",
+      "type" : "boolean",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "content",
+      "type" : "longstring",
+      "length" : 4096,
+      "listHidden" : true,
+      "persistent" : true
+    },
+    {
+      "name" : "jobId",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "customerId",
+      "type" : "long",
+      "persistent" : true
+    }
+  ],
+  "displayName" : "Note",
+  "nameInDS" : "Note_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true
+}

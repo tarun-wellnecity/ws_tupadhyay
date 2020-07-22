@@ -1,0 +1,81 @@
+.page-wrapper {
+  height: 100vh;
+}
+
+.sidebar-nav li > a.trillo-selected, .sidebar-nav li:hover > a.trillo-selected {
+  color: #ffffff;
+  background: #26c6da !important;
+}
+
+.sidebar-nav li > a.trillo-selected i, .sidebar-nav li:hover > a.trillo-selected i {
+  color: #ffffff;
+}
+
+.sidebar-nav > ul > li.active > a, .sidebar-nav > ul > li.active:hover > a,
+.sidebar-nav > ul > li.active > a i, .sidebar-nav > ul > li.active:hover > a i {
+  color: #607d8b;
+  background: transparent !important;
+  box-shadow: none;
+}
+
+.mini-sidebar .sidebar-nav > ul > li {
+  position: relative;
+}
+
+.mini-sidebar .sidebar-nav > ul ul {
+  background-color: #fff;
+  box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+  position: absolute;
+  top: 30px;
+  z-index: 2;
+  left: 44px;
+  min-width: 200px;
+}
+
+.mini-sidebar .sidebar-nav .has-arrow::after {
+  right: 0.125em;
+}
+
+.mini-sidebar .sidebar-nav > ul > li > a{
+  padding: 8px 10px 8px 15px;
+}
+
+.topbar {
+  position: fixed;
+  top: 0px;
+}
+
+.sidebar-nav > ul > li.active > a:after, .sidebar-nav > ul > li.active:hover > a:after {
+  border-color: #607d8b;
+}
+
+@media (max-width: 767px) {
+  .mini-sidebar .sidebar-nav > ul ul {
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.page-wrapper {
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+
+.trillo-dialog .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.no-sidebar .sidebartoggler,
+.no-sidebar .nav-toggler {
+  display: none;
+}
+
+.no-sidebar .page-wrapper {
+ margin-left: 0;
+}
+
+.user-profile .dropdown-menu {
+  width: 220px;
+}

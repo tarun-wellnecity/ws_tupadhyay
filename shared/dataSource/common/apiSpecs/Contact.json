@@ -1,0 +1,631 @@
+[
+  {
+    "serviceUrl" : "/ds/delete/shared/common/Contact",
+    "method" : "delete",
+    "querySchema" : {
+      "properties" : {
+        "permanent" : {
+          "type" : "string"
+        },
+        "id" : {
+          "required" : true,
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/deleteAll/shared/common/Contact",
+    "bodySchema" : {
+      "array" : true,
+      "type" : "string"
+    },
+    "method" : "post",
+    "querySchema" : {
+      "properties" : {
+        "permanent" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/deleteByQuery/shared/common/Contact",
+    "method" : "delete",
+    "querySchema" : {
+      "properties" : {
+        "permanent" : {
+          "type" : "string"
+        },
+        "query" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/object/shared/common/Contact",
+    "method" : "get",
+    "outputSchema" : {
+      "properties" : {
+        "lastName" : {
+          "type" : "string"
+        },
+        "idOfUser" : {
+          "type" : "number"
+        },
+        "_label" : {
+          "type" : "string"
+        },
+        "createdAt" : {
+          "type" : "number"
+        },
+        "firstName" : {
+          "type" : "string"
+        },
+        "primaryPhone" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "customerId" : {
+          "type" : "number"
+        },
+        "altPhone" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "number"
+        },
+        "email" : {
+          "type" : "string"
+        },
+        "updatedAt" : {
+          "type" : "number"
+        },
+        "customer" : {
+          "properties" : {
+            "createdAt" : {
+              "type" : "number"
+            },
+            "primaryContact" : {
+              "type" : "number"
+            },
+            "name" : {
+              "type" : "string"
+            },
+            "description" : {
+              "type" : "string"
+            },
+            "id" : {
+              "type" : "number"
+            },
+            "_label" : {
+              "type" : "string"
+            },
+            "updatedAt" : {
+              "type" : "number"
+            }
+          },
+          "type" : "object"
+        }
+      },
+      "type" : "object"
+    },
+    "querySchema" : {
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "testQuery" : {
+      "id" : "1"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/objectwithassociation/shared/common/Contact",
+    "method" : "get",
+    "querySchema" : {
+      "properties" : {
+        "assocName" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/objects/shared/common/Contact",
+    "bodySchema" : {
+      "array" : true,
+      "type" : "string"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/objectsbyquery/shared/common/Contact",
+    "method" : "get",
+    "outputSchema" : {
+      "array" : true,
+      "properties" : {
+        "lastName" : {
+          "type" : "string"
+        },
+        "idOfUser" : {
+          "type" : "number"
+        },
+        "_label" : {
+          "type" : "string"
+        },
+        "createdAt" : {
+          "type" : "number"
+        },
+        "firstName" : {
+          "type" : "string"
+        },
+        "primaryPhone" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "customerId" : {
+          "type" : "number"
+        },
+        "altPhone" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "number"
+        },
+        "email" : {
+          "type" : "string"
+        },
+        "updatedAt" : {
+          "type" : "number"
+        },
+        "customer" : {
+          "properties" : {
+            "createdAt" : {
+              "type" : "number"
+            },
+            "primaryContact" : {
+              "type" : "number"
+            },
+            "name" : {
+              "type" : "string"
+            },
+            "description" : {
+              "type" : "string"
+            },
+            "id" : {
+              "type" : "number"
+            },
+            "_label" : {
+              "type" : "string"
+            },
+            "updatedAt" : {
+              "type" : "number"
+            }
+          },
+          "type" : "object"
+        }
+      },
+      "type" : "object"
+    },
+    "querySchema" : {
+      "properties" : {
+        "query" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/objectsbyquerywithassociation/shared/common/Contact",
+    "method" : "get",
+    "querySchema" : {
+      "properties" : {
+        "assocName" : {
+          "type" : "string"
+        },
+        "query" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/page/shared/common/Contact",
+    "bodySchema" : {
+      "properties" : {
+        "having" : {
+          "type" : "string"
+        },
+        "size" : {
+          "type" : "integer"
+        },
+        "start" : {
+          "type" : "integer"
+        },
+        "orderBy" : {
+          "type" : "string"
+        },
+        "className" : {
+          "type" : "string"
+        },
+        "where" : {
+          "type" : "string"
+        },
+        "groupBy" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post",
+    "outputSchema" : {
+      "properties" : {
+        "items" : {
+          "array" : true,
+          "properties" : {
+            "lastName" : {
+              "type" : "string"
+            },
+            "idOfUser" : {
+              "type" : "number"
+            },
+            "_label" : {
+              "type" : "string"
+            },
+            "createdAt" : {
+              "type" : "number"
+            },
+            "firstName" : {
+              "type" : "string"
+            },
+            "primaryPhone" : {
+              "type" : "string"
+            },
+            "name" : {
+              "type" : "string"
+            },
+            "customerId" : {
+              "type" : "number"
+            },
+            "altPhone" : {
+              "type" : "string"
+            },
+            "id" : {
+              "type" : "number"
+            },
+            "email" : {
+              "type" : "string"
+            },
+            "updatedAt" : {
+              "type" : "number"
+            },
+            "customer" : {
+              "properties" : {
+                "createdAt" : {
+                  "type" : "number"
+                },
+                "primaryContact" : {
+                  "type" : "number"
+                },
+                "name" : {
+                  "type" : "string"
+                },
+                "description" : {
+                  "type" : "string"
+                },
+                "id" : {
+                  "type" : "number"
+                },
+                "_label" : {
+                  "type" : "string"
+                },
+                "updatedAt" : {
+                  "type" : "number"
+                }
+              },
+              "type" : "object"
+            }
+          },
+          "type" : "object"
+        },
+        "totalItems" : {
+          "type" : "number"
+        },
+        "start" : {
+          "type" : "number"
+        },
+        "_paginated_" : {
+          "type" : "boolean"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/save/shared/common/Contact",
+    "bodySchema" : {
+      "properties" : {
+        "firstName" : {
+          "type" : "string"
+        },
+        "lastName" : {
+          "type" : "string"
+        },
+        "primaryPhone" : {
+          "type" : "string"
+        },
+        "idOfUser" : {
+          "type" : "long"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "customerId" : {
+          "type" : "long"
+        },
+        "altPhone" : {
+          "type" : "string"
+        },
+        "email" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/saveAll/shared/common/Contact",
+    "bodySchema" : {
+      "array" : true,
+      "properties" : {
+        "firstName" : {
+          "type" : "string"
+        },
+        "lastName" : {
+          "type" : "string"
+        },
+        "primaryPhone" : {
+          "type" : "string"
+        },
+        "idOfUser" : {
+          "type" : "long"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "customerId" : {
+          "type" : "long"
+        },
+        "altPhone" : {
+          "type" : "string"
+        },
+        "email" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/update/shared/common/Contact",
+    "bodySchema" : {
+      "properties" : {
+        "ids" : {
+          "array" : true,
+          "type" : "string"
+        },
+        "attrValue" : {
+          "type" : "object"
+        },
+        "attrName" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/updateOne/shared/common/Contact",
+    "bodySchema" : {
+      "properties" : {
+        "attrValue" : {
+          "type" : "object"
+        },
+        "id" : {
+          "type" : "string"
+        },
+        "attrName" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/saveObjectWithAssociation/shared/common/Contact",
+    "bodySchema" : {
+      "properties" : {
+        "firstName" : {
+          "type" : "string"
+        },
+        "lastName" : {
+          "type" : "string"
+        },
+        "primaryPhone" : {
+          "type" : "string"
+        },
+        "idOfUser" : {
+          "type" : "long"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "customerId" : {
+          "type" : "long"
+        },
+        "altPhone" : {
+          "type" : "string"
+        },
+        "email" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post",
+    "querySchema" : {
+      "properties" : {
+        "deleteOld" : {
+          "type" : "string"
+        },
+        "assocName" : {
+          "required" : true,
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/saveObjectsWithAssociation/shared/common/Contact",
+    "bodySchema" : {
+      "properties" : {
+        "firstName" : {
+          "type" : "string"
+        },
+        "lastName" : {
+          "type" : "string"
+        },
+        "primaryPhone" : {
+          "type" : "string"
+        },
+        "idOfUser" : {
+          "type" : "long"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "customerId" : {
+          "type" : "long"
+        },
+        "altPhone" : {
+          "type" : "string"
+        },
+        "email" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post",
+    "querySchema" : {
+      "properties" : {
+        "deleteOld" : {
+          "type" : "string"
+        },
+        "assocName" : {
+          "required" : true,
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/saveSnapshot/shared/common/Contact",
+    "bodySchema" : {
+      "properties" : {
+        "sourceId" : {
+          "type" : "string"
+        },
+        "snapKey" : {
+          "type" : "string"
+        },
+        "sourceObject" : {
+          "type" : "object"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/snapshot/shared/common/Contact",
+    "method" : "get",
+    "querySchema" : {
+      "properties" : {
+        "sourceId" : {
+          "type" : "string"
+        },
+        "snapKey" : {
+          "required" : true,
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/sqltemplate/shared/common/Contact",
+    "bodySchema" : {
+      "properties" : {
+        "sqlTemplate" : {
+          "type" : "string"
+        },
+        "size" : {
+          "type" : "integer"
+        },
+        "start" : {
+          "type" : "integer"
+        },
+        "className" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/objectgraph/shared/common/Contact",
+    "bodySchema" : {
+      "properties" : {
+        "children" : {
+          "type" : "object"
+        },
+        "query" : {
+          "type" : "string"
+        },
+        "className" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  }
+]

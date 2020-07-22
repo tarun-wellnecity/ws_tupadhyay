@@ -1,0 +1,100 @@
+{
+  "name" : "AuditLog",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "biginteger",
+      "persistent" : true,
+      "primaryKey" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "createdAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deleted",
+      "type" : "boolean",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "summary",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "type",
+      "type" : "string",
+      "length" : 16,
+      "persistent" : true
+    },
+    {
+      "name" : "action",
+      "type" : "string",
+      "length" : 24,
+      "persistent" : true
+    },
+    {
+      "name" : "parentUid",
+      "type" : "string",
+      "indexed" : true,
+      "length" : 32,
+      "persistent" : true
+    },
+    {
+      "name" : "accessControl",
+      "type" : "string",
+      "length" : 16,
+      "persistent" : true
+    },
+    {
+      "name" : "info",
+      "type" : "longstring",
+      "length" : 2048,
+      "listHidden" : true,
+      "persistent" : true
+    },
+    {
+      "name" : "idOfUser",
+      "type" : "biginteger",
+      "indexed" : true,
+      "persistent" : true
+    },
+    {
+      "name" : "userId",
+      "type" : "string",
+      "length" : 16,
+      "persistent" : true
+    },
+    {
+      "name" : "firstName",
+      "type" : "string",
+      "length" : 50,
+      "persistent" : true
+    },
+    {
+      "name" : "lastName",
+      "type" : "string",
+      "length" : 50,
+      "persistent" : true
+    }
+  ],
+  "nameInDS" : "AuditLog_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true
+}
